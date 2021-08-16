@@ -1,0 +1,87 @@
+{
+  "editor.fontFamily": "Victor Mono",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  // "eslint.workingDirectories": ["./backend"],
+  "eslint.workingDirectories": [
+    { "mode": "auto" }
+  ],
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // eva-dark theme
+  "workbench.colorCustomizations": {
+    // warning color
+    "debugConsole.warningForeground": "#df9b1e",
+    "editorMarkerNavigationWarning.background": "#df9b1e",
+    "editorOverviewRuler.warningForeground": "#df9b1e",
+    "editorWarning.foreground": "#df9b1e",
+    "inputValidation.warningBackground": "#df9b1e59",
+    "inputValidation.warningBorder": "#df9b1e",
+    "list.warningForeground": "#df9b1e",
+    "minimap.warningHighlight": "#df9b1e59",
+    "terminal.ansiBrightYellow": "#df9b1e", 
+    "tokenColors":[{
+      "scope":"token.warn-token",
+      "settings":{
+        "fontStyle":"",
+        "foreground":"#df9b1e"
+      }
+    }],
+    // git
+    "gitDecoration.untrackedResourceForeground": "#1a7a1a",
+  },
+  // shorthand object properties
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "meta.object.member.ts variable.other.readwrite.ts",
+        "settings": {
+          "fontStyle": "",
+          "foreground": "#E06C75"
+        }
+      },
+      {
+        "scope": "entity.name.type.enum",
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#FF6AB3"
+        }
+      },
+      
+    ]
+  },
+  // default libraries and semantic in general
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "variable.defaultLibrary": "#e0b700" ,
+      // "variable.defaultLibrary": "#3cff00" ,
+    },
+  }
+}
+
+// THEME CUSTOMIZATION
+// https://github.com/fisheva/Eva-Theme/blob/master/themes/Eva-Dark-Italic.json
+// https://medium.com/@danromans/how-to-customize-semantic-token-colorization-with-visual-studio-code-ac3eab96141b
+// https://medium.com/@nuozheng/how-to-customize-visual-studio-code-theme-colors-a6fb1e94f71f
+// https://macromates.com/manual/en/scope_selectors
+// https://code.visualstudio.com/api/references/theme-color
